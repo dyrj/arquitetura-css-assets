@@ -1,0 +1,15 @@
+.pessoa {
+    display: flex;
+    flex-direction: column;
+}/*os nomes estão uns sobre os outros, mas queremos que estejam todos ao lado.Para isso, voltaremos ao arquivo pessoas.css, referente à classe pai, e usaremos o seletor .pessoas. Aqui teremos os parâmetros display: flex e justify-content: space-around para que os elementos sejam justificados de acordo com o espaço na página, além de um padding: 3rem para incluirmos um espaçamento em relação à descrição.*/
+
+@media screen and (min-width: 0) {
+    .pessoa {
+        margin-bottom: 2rem;/*adicionaremos uma margem inferior entre as pessoas quando o site for exibido em telas menores*/
+    }
+}
+@media screen and (min-width: 768px) {
+    .pessoa {
+        margin-bottom: 0;/*não vai precisar de espaçamento, pois está um do lado do outro, um embaixo do outro*/
+    }
+}

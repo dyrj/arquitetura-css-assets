@@ -1,0 +1,21 @@
+.pessoa__imagem {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    height: 300px;
+    margin: 0 auto;/*para centralizar a imagem*/  
+    width: 300px;
+}/*as imagens estão cortadas e repetidas, já que o tamanho delas é menor que o da caixa. Isso significa que teremos que fazer alguns ajustes. Para que as imagens não se repitam, usaremos o parâmetro background-repeat: no-repeat, além de background-size: cover para que as imagens ocupem todo o background e background-position: center para que elas sejam centralizadas na caixa.*/
+
+.pessoa__imagem--roberta {
+    background-image: url('../../img/pessoas/roberta.jpg');
+}
+
+.pessoa__imagem--marcela {
+    background-image: url('../../img/pessoas/marcela.jpg');
+}
+
+.pessoa__imagem--andreia {
+    background-image: url('../../img/pessoas/andreia.jpg');
+}

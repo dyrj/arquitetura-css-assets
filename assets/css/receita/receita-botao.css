@@ -1,0 +1,13 @@
+.receita__botao {
+    background: #8d0606;
+    border: none;
+    border-radius: 5px;/*canto arredondado*/
+    color: #fdfdfd;
+    padding: 1rem;/*espaçamento interno*/
+    transition: all .1s ease-in-out;/*a transição entre o botão "normal" e o selecionado ficará um pouco rígida demais. Podemos suavizá-la usando a propriedade transition: all .1s ease-in-out, indicando uma animação de transição que deverá ocorrer devagar.*/
+}
+
+.receita__botao:hover {/*mouse em cima do botão, o cursor pointer, vai aparecer a maozinha,dando a ideia de que pode ser clicado*/
+    background: #620404;
+    cursor: pointer;
+}

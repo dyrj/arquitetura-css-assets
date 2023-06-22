@@ -1,0 +1,27 @@
+.receita {
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+    width: calc(25% - 5rem);/* 5 rem é o espaçamento a direita*/
+}
+/*queremos que as receitas sejam alinhadas corretamente. Dessa vez teremos uma pequena diferença: além dos tamanhos mínimos 0px, que engloba os celulares, e 768px, que representa os tablets, terem os também a adição de um @media screen and (min-width: 992px), referindo-se são os desktops, e que receberá os valores padrão de width e margin-right.*/
+@media screen and (min-width: 0) {
+    .receita {
+        margin-right: 1rem;/*e o margin-right será 1rem, espaçamento interno*/
+        width: 100%;/*Nos tamanhos menores, o width será 100%, de modo a apresentar uma receita por linha*/
+    }
+}
+@media screen and (min-width: 768px) {/*. Já em telas maiores que 768px, teremos um margin-right de 2.5rem e um width que receberá calc(33% - 2.5rem), fazendo com que a tela apresente três receitas por linha esse 33.33 e depois aumente para 4.*/
+    .receita {
+        margin-right: 2.5rem;
+        width: calc(33.33% - 2.5rem);
+    }
+}
+@media screen and (min-width: 992px) {/*telas para desktop*/
+    .receita {
+        margin-right: 5rem;
+        width: calc(25% - 5rem);
+    }
+}

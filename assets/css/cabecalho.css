@@ -1,0 +1,24 @@
+.cabecalho {
+    align-items: center;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;/*altera o espaçamento interno à esquerda.*/
+    padding-right: 2rem;/*altera o espaçamento interno à direita.*/
+}
+
+/*declarando um @media que aponta para uma tela (screen and) cujo largura mínima é 0. A estilização que colocamos dentro dele por meio de .cabecalho será então utilizada para telas menores, como as de celulares. Definimos, portanto, que o conteúdo deverá ser justificado ao centro (justify-content: center) e que somente deverá haver espaçamento nas laterais (padding: 0 1rem).*/
+@media screen and (min-width: 0) {
+    .cabecalho {
+        justify-content: center;
+        padding: 0 1rem;
+    }
+}
+
+/*estilização para telas maiores. Para isso, criaremos um novo @media screen and, agora com min-width: 768px. Dessa vez passaremos os parâmetros justify-content: space-between, para corrigirmos o alinhamento do conteúdo, e padding: 0 5rem de modo a termos um espaçamento lateral maior.*/
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        padding: 0 5rem;
+        justify-content: space-between;
+    }
+}

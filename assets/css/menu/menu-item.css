@@ -1,0 +1,7 @@
+.menu__item {/* o ponto (.) é utilizado para busca de classes,e sem ele o CSS tentaria buscar uma tag com aquele nome*/
+    list-style: none;
+}
+
+.menu__item:last-child .menu__link {
+    margin-right: 0;
+}/*indicando que não queremos nenhuma margem à direita do item.*/

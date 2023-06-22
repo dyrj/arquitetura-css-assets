@@ -1,0 +1,23 @@
+.banner__titulo {
+    color: #fdfdfd;
+    font-family: Pacifico, cursive;
+    position: absolute;
+    left: 50%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+@media screen and (min-width: 0) {
+    .banner__titulo {
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width: 768px) {/*tamanho normal*/
+    .banner__titulo {
+        font-size: 5.0625rem;
+    }
+}
+/*removemos a propriedade font-size da posição original lá no titulo e colocamos na media screen, já que, quando queremos tornar uma propriedade responsiva, devemos removê-la do seletor comum e utilizá-la somente nos seletores de mídia (media queries).*/

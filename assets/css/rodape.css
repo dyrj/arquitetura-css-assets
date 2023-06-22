@@ -1,0 +1,18 @@
+.rodape {
+    background: #bfbfbf;/*para definirmos que o fundo terá uma cor cinza*/
+    color: #fdfdfd;/*para definirmos a cor do texto*/
+    text-align: right;/*para alinharmos o texto à direita*/
+    padding: 1.5625rem 5rem;/* definindo o espaçamento superior e inferior e direita e esquerda de 5rem*/
+    text-transform: lowercase;/*caixa baixa*/
+}
+
+@media screen and (min-width: 0) {
+    .rodape {
+        font-size: 1.125rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .rodape {
+        font-size: 2rem;
+    }
+}
